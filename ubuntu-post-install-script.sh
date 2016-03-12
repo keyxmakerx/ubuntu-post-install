@@ -38,6 +38,8 @@ dir="$(dirname "$0")"
 . $dir/functions/thirdparty
 . $dir/functions/update
 . $dir/functions/utilities
+. $dir/functions/actions/cleanup
+. $dir/functions/actions/user
 
 #----- Fancy Messages -----#
 show_error(){
