@@ -79,6 +79,7 @@ function main {
         thirdparty  'Install third-party applications' \
         configure   'Configure system' \
         cleanup     'Cleanup the system' \
+        echo     'Just Echo' \
         3>&1 1>&2 2>&3)
      
     exitstatus=$?
