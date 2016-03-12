@@ -34,6 +34,7 @@ dir="$(dirname "$0")"
 . $dir/functions/codecs
 . $dir/functions/configure
 . $dir/functions/development
+. $dir/functions/ech
 . $dir/functions/favourites
 . $dir/functions/thirdparty
 . $dir/functions/update
@@ -79,7 +80,7 @@ function main {
         thirdparty  'Install third-party applications' \
         configure   'Configure system' \
         cleanup     'Cleanup the system' \
-        echo     'Just Echo' \
+        ech         'Just Echo' \
         3>&1 1>&2 2>&3)
      
     exitstatus=$?
