@@ -1,3 +1,12 @@
 #!/bin/bash
-echo "Yup"
-sleep 5
+
+# Perform system upgrade
+function ech {
+if (whiptail --title "System Update" --yesno "Proceed with system echo?" 10 60) then
+    # Update repository information
+    echo "yup"
+    sleep 4
+else
+    clear && main
+fi
+}
